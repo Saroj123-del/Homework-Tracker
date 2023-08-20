@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="maindiv">
+      <nav id="navbar">
+        <h1 id="loginpage`">Homework Tracker</h1>
+        <div id="navbartwo">
+          <h1 id="Add">+ Add Homework</h1>
+          <h1 id="name"></h1>
+        </div>
+      </nav>
+      <div id="mainform">
+        <div id="btn">
+          <button onclick="filterTasks('all')" class="but">All</button>
+          <button onclick="filterTasks('inProgress')" class="but">
+            In Progress
+          </button>
+          <button onclick="filterTasks('notStarted')" class="but">
+            Not Started
+          </button>
+          <button onclick="filterTasks('completed')" class="but">
+            Completed
+          </button>
+          <button id="cancol">Cancel</button>
+        </div>
+
+        <div id="result"></div>
+        <div id="formContainer">
+          <form id="from">
+            <h1>Edit/Add Homework</h1>
+            <h3 id="mtitle">Title</h3>
+            <input type="text" id="title" placeholder="enter homework title" />
+            <h3 id="dtitle">Description</h3>
+            <textarea
+              name=""
+              id="description"
+              cols="30"
+              rows="10"
+              placeholder="enter homework description"
+            ></textarea>
+            <h3 id="stitle">Status</h3>
+            <select id="selected">
+              <option>Select</option>
+              <option value="In Progress">In Progress</option>
+              <option value="Not Started">Not Started</option>
+              <option value="Completed">Completed</option>
+            </select>
+            <div id="buttons">
+              <button id="cancelbtn">Cancel</button>
+              <input type="submit" id="submitbtn" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
